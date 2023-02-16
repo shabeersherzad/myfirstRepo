@@ -1,0 +1,41 @@
+2023-02-08 20:21:50,326 [main] INFO logger_File - user is on retail website
+2023-02-08 20:21:50,336 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-08 20:21:50,882 [main] INFO logger_File - user searched for product pokemon
+2023-02-08 20:21:51,077 [main] INFO logger_File - the Product is displayed on home page
+2023-02-08 20:32:42,281 [main] INFO logger_File - user is on retail website
+2023-02-08 20:32:42,299 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-08 20:32:42,620 [main] INFO logger_File - user searched for product pokemon
+2023-02-08 20:32:42,906 [main] INFO logger_File - the Product is displayed on home page
+2023-02-13 20:07:19,157 [main] INFO logger_File - user is on retail website
+2023-02-13 20:07:19,162 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-13 20:07:19,352 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-13 20:07:19,677 [main] INFO logger_File - user entered email shabeer.shirzad@tekschool.us and Password 123Khan360!
+2023-02-13 20:07:19,788 [main] INFO logger_File - user clicked on login button
+2023-02-14 02:26:48,040 [main] INFO logger_File - user is on retail website
+2023-02-14 02:26:48,055 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-14 02:26:48,280 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-14 02:26:48,423 [main] INFO logger_File - user click on create new account
+2023-02-14 02:26:49,851 [main] INFO logger_File - User filled the signup information Form
+2023-02-14 02:26:49,977 [main] INFO logger_File - User click on SignUp button
+2023-02-14 02:26:50,273 [main] INFO logger_File - User is logged in into Account page
+2023-02-14 02:30:25,630 [main] INFO logger_File - user is on retail website
+2023-02-14 02:30:25,649 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-14 02:30:25,969 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-14 02:30:26,083 [main] INFO logger_File - user click on create new account
+2023-02-14 02:30:26,580 [main] INFO logger_File - User filled the signup information Form
+2023-02-14 02:30:26,692 [main] INFO logger_File - User click on SignUp button
+2023-02-14 19:12:04,403 [main] INFO logger_File - user is on retail website
+2023-02-14 19:12:04,415 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-14 19:12:04,834 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-14 19:12:04,971 [main] INFO logger_File - user click on create new account
+2023-02-14 19:12:05,560 [main] INFO logger_File - User filled the signup information Form
+2023-02-14 19:12:05,909 [main] INFO logger_File - User click on SignUp button
+2023-02-14 20:30:16,410 [main] INFO logger_File - user is on retail website
+2023-02-14 20:30:16,437 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-14 20:30:16,843 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-14 20:30:17,178 [main] INFO logger_File - user entered email shershah@gmail.com and Password Sher@123
+2023-02-14 20:30:17,313 [main] INFO logger_File - user clicked on login button
+2023-02-14 20:30:17,801 [main] INFO logger_File - User click on Account Button
+2023-02-14 20:30:18,305 [main] INFO logger_File - User updated Name and Phone Number
+2023-02-14 20:30:18,408 [main] INFO logger_File - User click on updated button
+2023-02-14 20:30:19,177 [main] INFO logger_File - User profile information Updated
