@@ -11,7 +11,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 	tags = "@smokeTest",
 	features = ("classpath:features"),
 	glue = "tek.sdet.framework",
-	dryRun = false,
+	dryRun = true,
 	plugin = {
 			"pretty",
             "html:target/htmlReports/cucumber-pretty.html",

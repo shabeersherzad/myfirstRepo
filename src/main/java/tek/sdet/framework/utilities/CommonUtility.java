@@ -173,7 +173,7 @@ public class CommonUtility extends BaseSetup {
 	 
 	 public WebElement fluientWaitforElement(WebElement element, int timoutSec, int pollingSec) {
 	        FluentWait<WebDriver> fWait = new FluentWait<WebDriver>(getDriver()).withTimeout(Duration.ofSeconds(30))
-	                .pollingEvery(Duration.ofSeconds(30)).ignoring(NoSuchElementException.class, TimeoutException.class)
+	                .pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class, TimeoutException.class)
 	                .ignoring(StaleElementReferenceException.class);
 	        for (int i = 0; i < 2; i++)
 	            fWait.until(ExpectedConditions.visibilityOf(element));

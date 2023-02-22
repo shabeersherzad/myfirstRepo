@@ -7,7 +7,7 @@ Feature: Retail Application Account Feature
     And User click on login button
     And user should be logged in into Account
 
-  @smokeTest
+  
   Scenario: Verify User can update Profile Information
     When User Click on Account option
     And User update Name 'Khan Saib' and Phone '5716004228'

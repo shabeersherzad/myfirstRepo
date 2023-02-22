@@ -39,3 +39,19 @@
 2023-02-14 20:30:18,305 - logger_File -INFO - User updated Name and Phone Number
 2023-02-14 20:30:18,408 - logger_File -INFO - User click on updated button
 2023-02-14 20:30:19,177 - logger_File -INFO - User profile information Updated
+2023-02-16 22:33:31,230 - logger_File -INFO - user is on retail website
+2023-02-16 22:33:31,238 - logger_File -INFO - Actual Title React App Equals  Expected Title React App
+2023-02-16 22:33:31,464 - logger_File -INFO - User click on All section
+2023-02-16 22:33:31,631 - logger_File -INFO - Electronicsis equal to Electronics
+2023-02-16 22:33:31,672 - logger_File -INFO - Computersis equal to Computers
+2023-02-16 22:33:31,713 - logger_File -INFO - Smart Homeis equal to Smart Home
+2023-02-16 22:33:31,749 - logger_File -INFO - Sportsis equal to Sports
+2023-02-16 22:33:31,793 - logger_File -INFO - Automativeis equal to Automative
+2023-02-16 22:37:30,245 - logger_File -INFO - user is on retail website
+2023-02-16 22:37:30,258 - logger_File -INFO - Actual Title React App Equals  Expected Title React App
+2023-02-16 22:37:30,366 - logger_File -INFO - User click on All section
+2023-02-16 22:37:30,439 - logger_File -INFO - Electronicsis equal to Electronics
+2023-02-16 22:37:30,500 - logger_File -INFO - Computersis equal to Computers
+2023-02-16 22:37:30,649 - logger_File -INFO - Smart Homeis equal to Smart Home
+2023-02-16 22:37:30,754 - logger_File -INFO - Sportsis equal to Sports
+2023-02-16 22:37:30,796 - logger_File -INFO - Automativeis equal to Automative
