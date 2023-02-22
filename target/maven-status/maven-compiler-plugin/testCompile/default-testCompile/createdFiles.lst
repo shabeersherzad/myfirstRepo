@@ -6,3 +6,4 @@ tek\sdet\framework\steps\RetailSteps.class
 tek\sdet\framework\steps\SignInSteps.class
 tek\sdet\framework\pages\RetailSignInPage.class
 tek\sdet\framework\pages\POMFactory.class
+tek\sdet\framework\steps\RetailAccountSteps.class
