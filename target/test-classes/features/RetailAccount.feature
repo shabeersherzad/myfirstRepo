@@ -39,4 +39,9 @@ Feature: Retail Application Account Feature
       | 5666789867332144 | sher Khan  |              3 |           2027 |          444 |
     And User click on Update Your Card button
     Then A message should be displayed for update card 'Payment Method updated Successfully'
+    @remove
+    Scenario:
+    When User click on Account option
+    And User click on remove option of Card section
+    Then Payment details should be removed
     
