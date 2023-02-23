@@ -87,7 +87,51 @@ public class RetailAccountPage extends BaseSetup{
 	@FindBy(xpath = "//button[contains(text(),'remove')]")
 	public WebElement removeYourCardBtn;
 	
+	@FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/*[1]")
+	public WebElement addAddressIcon;
 	
+	@FindBy(css = "#countryDropdown")
+	public WebElement countryDropDown;
 	
+	@FindBy(css = "#fullNameInput")
+	public WebElement addressFullNameField;
 	
+	@FindBy(xpath = "//input[@id='phoneNumberInput']")
+	public WebElement addressPhoneNumberField;
+	
+	@FindBy(xpath = "//input[@id='streetInput']")
+	public WebElement AddressField;
+	
+	@FindBy(xpath = "//input[@id='apartmentInput']")
+	public WebElement apartmentField;
+	
+	@FindBy(css = "#cityInput")
+	public WebElement cityField;
+	
+	@FindBy(xpath = "//select[@name='state']")
+	public WebElement stateDropDown;
+	
+	@FindBy(xpath = "//input[@id='zipCodeInput']")
+	public WebElement zipCodeField;
+	
+	@FindBy(css = "#addressBtn")
+	public WebElement addYourAddessBtn;
+	
+	@FindBy(xpath = "//div[contains(text(),'Address Added Successfully')]")
+	public WebElement addressAddedMessage;;
+	
+	@FindBy(xpath ="(//button[@class='account__address-btn'])[1]")
+	public WebElement eidtAddressBtn;
+	
+	@FindBy(xpath = "//button[@id='addressBtn']")
+	public WebElement updateAddressBtn;
+	
+	@FindBy(xpath = "//div[contains(text(),'Address Updated Successfully')]")
+	public WebElement addressUpadedMessage;
+	
+	@FindBy(xpath = "//button[contains(text(),'Remove')]")
+	public WebElement removeAddressBtn;
+	
+	@FindBy(xpath = "//div[@class='account__address-single']")
+	public WebElement addressBox;
 	}
