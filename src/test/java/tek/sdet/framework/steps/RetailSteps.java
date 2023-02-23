@@ -73,14 +73,26 @@ public class RetailSteps extends CommonUtility {
 			click(option);
 			try {
 				logger.info(option.getText() + " is present ");
-			}catch (StaleElementReferenceException e){
+			} catch (StaleElementReferenceException e){
 				
 			}
+			break;
 		}
 	  }
 	}
 	@Then("below options are present in department")
 	public void belowOptionsArePresentInDepartment(DataTable dataTable) {
+		
+		List<List<String>> expectedDepartmentOptions = dataTable.asLists(String.class);
+		List<WebElement> actualDepartmentOptions = factory.homePage().sideBarOptionElements;
+		
+		for (int i = 0 ; i < expectedDepartmentOptions.get(0).size(); i++ ) {
+			for(WebElement dept : actualDepartmentOptions ) {
+				if (dept.getText().equals(expectedDepartmentOptions.get(0).get(i)));
+				Assert.assertTrue(isElementDisplayed(dept));
+				logger.info(dept.getText() + " is present ");
+			}
+		}
 	   
 	}
 	
