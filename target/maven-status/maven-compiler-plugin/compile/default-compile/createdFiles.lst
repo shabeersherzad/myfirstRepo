@@ -7,5 +7,7 @@ tek\sdet\framework\utilities\FileUtility.class
 tek\sdet\framework\config\ChromeHeadless.class
 tek\sdet\framework\config\FireFoxBrowser.class
 tek\sdet\framework\utilities\CommonUtility.class
+GitPracticeTwo.class
 tek\sdet\framework\config\EdgeBrowser.class
 tek\sdet\framework\config\Browser.class
+SecondCommitBranch.class
