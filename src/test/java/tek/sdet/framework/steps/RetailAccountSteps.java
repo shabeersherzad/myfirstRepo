@@ -125,5 +125,17 @@ public class RetailAccountSteps extends CommonUtility{
 		Assert.assertEquals(string, factory.accountPage().paymentMethodEidtMessage.getText());
 		logger.info("User updated their card information");
 	}
+	@When("User click on remove option of Card section")
+	public void userClickOnRemoveOptionOfCardSection() {
+	    click(factory.accountPage().masterCard);
+	    click(factory.accountPage().removeYourCardBtn);
+	    logger.info("User click on remove option to remove their Card");
+	}
+	@Then("Payment details should be removed")
+	public void paymentDetailsShouldBeRemoved() {
+		isElementDisplayed(factory.accountPage().masterCard);
+		logger.info("User removed payment details");
+	    
+	}
 
 }

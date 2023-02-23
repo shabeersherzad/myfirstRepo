@@ -417,3 +417,19 @@
 2023-02-22 22:46:08,691 - logger_File -INFO - User update their card information
 2023-02-22 22:46:08,786 - logger_File -INFO - User click on updated card button
 2023-02-22 22:46:09,649 - logger_File -INFO - User updated their card information
+2023-02-22 23:30:41,403 - logger_File -INFO - user is on retail website
+2023-02-22 23:30:41,425 - logger_File -INFO - Actual Title React App Equals  Expected Title React App
+2023-02-22 23:30:41,748 - logger_File -INFO - User clicked on Sign in Option
+2023-02-22 23:30:42,034 - logger_File -INFO - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-22 23:30:42,128 - logger_File -INFO - user clicked on login button
+2023-02-22 23:30:42,571 - logger_File -INFO - User click on Account Button
+2023-02-22 23:30:42,809 - logger_File -INFO - User click on remove option to remove their Card
+2023-02-22 23:30:42,841 - logger_File -INFO - User removed payment details
+2023-02-22 23:34:09,766 - logger_File -INFO - user is on retail website
+2023-02-22 23:34:09,775 - logger_File -INFO - Actual Title React App Equals  Expected Title React App
+2023-02-22 23:34:10,194 - logger_File -INFO - User clicked on Sign in Option
+2023-02-22 23:34:10,536 - logger_File -INFO - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-22 23:34:10,625 - logger_File -INFO - user clicked on login button
+2023-02-22 23:34:11,052 - logger_File -INFO - User click on Account Button
+2023-02-22 23:34:11,291 - logger_File -INFO - User click on remove option to remove their Card
+2023-02-22 23:34:11,321 - logger_File -INFO - User removed payment details
