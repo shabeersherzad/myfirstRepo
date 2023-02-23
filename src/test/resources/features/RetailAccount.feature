@@ -6,15 +6,14 @@ Feature: Retail Application Account Feature
     And User enter email 'dilberjan@gmail.com' and password 'Jan@123456'
     And User click on login button
     And user should be logged in into Account
+    And User click on Account option
 
   Scenario: Verify User can update Profile Information
-    Given User click on Account option
     And User update Name 'Khan Saib' and Phone '5716004228'
     And User click on Update button
     Then User profile information shoud be updated
 
   Scenario: Verify User can update password
-    Given User click on Account option
     And User enter below information
       | previousPassword | newPassword | ConfirmNewPassword |
       | Jan@54321        | Jan@123456  | Jan@123456         |
@@ -22,7 +21,6 @@ Feature: Retail Application Account Feature
     Then A message should be displayed Password Updated Successfully
 
   Scenario: Verify User can add a payment method
-    Given User click on Account option
     And User click on Add a payment method link
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
@@ -32,16 +30,36 @@ Feature: Retail Application Account Feature
 
   @smoke
   Scenario: Verify User can edit Debit or Credit card
-    When User click on Account option
     And User click on Edit option of card section
     And User edit information with below data
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 5666789867332144 | sher Khan  |              3 |           2027 |          444 |
+      | 5666789867332144 | sher Khan  |               3 |           2027 |          444 |
     And User click on Update Your Card button
     Then A message should be displayed for update card 'Payment Method updated Successfully'
-    @remove
-    Scenario:
-    When User click on Account option
+
+  @remove
+  Scenario: 
     And User click on remove option of Card section
     Then Payment details should be removed
-    
+
+  @addAddress
+  Scenario: Verify User can add an Address
+    And User click on Add address option
+    And User fill new Address form with below information
+      | country       | fullName     | phoneNumber  | streetAddress   | apt | city  | state   | zipCode |
+      | United States | Donald Trump | 313-453-6534 | 555 Maralago St | Nil | Maimi | Florida |   23454 |
+    And User click Add Address button
+    Then A message should be displayed for Adding Address 'Address Added Successfully'
+
+  @updateAddress
+  Scenario: Verify User can edit an Address added on account
+    And User click on eidt address option
+    And User eidt address form with below information
+      | country       | fullName     | phoneNumber  | streetAddress | apt | city  | state   | zipCode |
+      | United States | Donald Trump | 313-453-6534 | 555 Dollar St | Nil | Maimi | Florida |   23454 |
+    And User click on update Your Address button
+    Then A message should be displayed for Updating Address 'Address Updated Successfully'
+@removeAddress
+  Scenario: 
+    When User click on remove option of Address section
+    Then Address details should be removed

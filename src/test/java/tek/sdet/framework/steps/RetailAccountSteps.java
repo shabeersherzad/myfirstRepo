@@ -134,8 +134,84 @@ public class RetailAccountSteps extends CommonUtility{
 	@Then("Payment details should be removed")
 	public void paymentDetailsShouldBeRemoved() {
 		isElementDisplayed(factory.accountPage().masterCard);
-		logger.info("User removed payment details");
-	    
+		logger.info("User removed payment details and will not be Displayed");
+	}
+	@When("User click on Add address option")
+	public void userClickOnAddAddressOption() {
+		scrollPageDownWithJS();  
+		click(factory.accountPage().addAddressIcon);
+		logger.info("User Scroll down the page and click on Add Address");
+	}
+	@When("User fill new Address form with below information")
+	public void userFillNewAddressFormWithBelowInformation(DataTable dataTable) {
+	    List<Map<String, String>> addressInfo = dataTable.asMaps(String.class, String.class);
+	    selectByVisibleText(factory.accountPage().countryDropDown, addressInfo.get(0).get("country"));
+	    sendText(factory.accountPage().addressFullNameField, addressInfo.get(0).get("fullName"));
+	    sendText(factory.accountPage().addressPhoneNumberField, addressInfo.get(0).get("phoneNumber"));
+	    sendText(factory.accountPage().AddressField, addressInfo.get(0).get("streetAddress"));
+	    sendText(factory.accountPage().apartmentField, addressInfo.get(0).get("apt"));
+	    sendText(factory.accountPage().cityField, addressInfo.get(0).get("city"));
+	    selectByVisibleText(factory.accountPage().stateDropDown, addressInfo.get(0).get("state"));
+	    sendText(factory.accountPage().zipCodeField, addressInfo.get(0).get("zipCode"));
+	    logger.info("User fillout the Address Form");
+	}
+	@When("User click Add Address button")
+	public void userClickAddAddressButton() {
+		click(factory.accountPage().addYourAddessBtn);
+		logger.info("User click on Add Your Address button");
+	   
+	}
+	@Then("A message should be displayed for Adding Address {string}")
+	public void aMessageShouldBeDisplayedForAddingAddress(String string) {
+		waitTillPresence(factory.accountPage().addressAddedMessage);
+		Assert.assertEquals(string, factory.accountPage().addressAddedMessage.getText());
+	   logger.info("User" + factory.accountPage().addressAddedMessage.getText());
+	}
+	@When("User click on eidt address option")
+	public void userClickOnEidtAddressOption() {
+		scrollPageDownWithJS();
+		click(factory.accountPage().eidtAddressBtn);
+		logger.info("User click on Eidt option");
+	}
+	@When("User eidt address form with below information")
+	public void userEidtAddressFormWithBelowInformation(DataTable dataTable) {
+		List<Map<String, String>> addressInfo = dataTable.asMaps(String.class, String.class);
+	    selectByVisibleText(factory.accountPage().countryDropDown, addressInfo.get(0).get("country"));
+	    clearTextUsingSendKeys(factory.accountPage().addressFullNameField);
+	    sendText(factory.accountPage().addressFullNameField, addressInfo.get(0).get("fullName"));
+	    clearTextUsingSendKeys(factory.accountPage().addressPhoneNumberField);
+	    sendText(factory.accountPage().addressPhoneNumberField, addressInfo.get(0).get("phoneNumber"));
+	    clearTextUsingSendKeys(factory.accountPage().AddressField);
+	    sendText(factory.accountPage().AddressField, addressInfo.get(0).get("streetAddress"));
+	    clearTextUsingSendKeys(factory.accountPage().apartmentField);
+	    sendText(factory.accountPage().apartmentField, addressInfo.get(0).get("apt"));
+	    clearTextUsingSendKeys(factory.accountPage().cityField);
+	    sendText(factory.accountPage().cityField, addressInfo.get(0).get("city"));
+	    selectByVisibleText(factory.accountPage().stateDropDown, addressInfo.get(0).get("state"));
+	    clearTextUsingSendKeys(factory.accountPage().zipCodeField);
+	    sendText(factory.accountPage().zipCodeField, addressInfo.get(0).get("zipCode"));
+	    logger.info("User Eidt the Address Form");
+	}
+	@When("User click on update Your Address button")
+	public void userClickOnUpdateYourAddressButton() {
+	    click(factory.accountPage().updateAddressBtn);
+	    logger.info("User click on Update Your Address button");
+	}
+	@Then("A message should be displayed for Updating Address {string}")
+	public void aMessageShouldBeDisplayedForUpdatingAddress(String string) {
+		waitTillPresence(factory.accountPage().addressUpadedMessage);
+		Assert.assertEquals(string, factory.accountPage().addressUpadedMessage.getText());
+	   logger.info("User" + factory.accountPage().addressUpadedMessage.getText()); 
+	}
+	@When("User click on remove option of Address section")
+	public void userClickOnRemoveOptionOfAddressSection() {
+	 click(factory.accountPage().removeAddressBtn);
+	 logger.info("User click on Remove button at the address section");
+	}
+	@Then("Address details should be removed")
+	public void addressDetailsShouldBeRemoved() {
+		isElementDisplayed(factory.accountPage().addressBox);
+		logger.info("Address should be removed from the Account section");
 	}
 
 }

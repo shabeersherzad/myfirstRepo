@@ -433,3 +433,107 @@
 2023-02-22 23:34:11,052 [main] INFO logger_File - User click on Account Button
 2023-02-22 23:34:11,291 [main] INFO logger_File - User click on remove option to remove their Card
 2023-02-22 23:34:11,321 [main] INFO logger_File - User removed payment details
+2023-02-23 03:38:53,134 [main] INFO logger_File - user is on retail website
+2023-02-23 03:38:53,152 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-23 03:38:53,491 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-23 03:38:53,768 [main] INFO logger_File - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-23 03:38:53,862 [main] INFO logger_File - user clicked on login button
+2023-02-23 03:38:54,278 [main] INFO logger_File - User click on Account Button
+2023-02-23 03:38:54,436 [main] INFO logger_File - User Scroll down the page and click on Add Address
+2023-02-23 03:38:55,342 [main] INFO logger_File - User fillout the Address Form
+2023-02-23 03:38:55,457 [main] INFO logger_File - User click on Add Your Address button
+2023-02-23 03:41:42,054 [main] INFO logger_File - user is on retail website
+2023-02-23 03:41:42,080 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-23 03:41:42,471 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-23 03:41:42,811 [main] INFO logger_File - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-23 03:41:42,903 [main] INFO logger_File - user clicked on login button
+2023-02-23 03:41:43,293 [main] INFO logger_File - User click on Account Button
+2023-02-23 03:41:43,455 [main] INFO logger_File - User Scroll down the page and click on Add Address
+2023-02-23 03:41:44,394 [main] INFO logger_File - User fillout the Address Form
+2023-02-23 03:41:44,513 [main] INFO logger_File - User click on Add Your Address button
+2023-02-23 03:41:45,189 [main] INFO logger_File - UserAddress Added Successfully
+2023-02-23 03:43:10,501 [main] INFO logger_File - user is on retail website
+2023-02-23 03:43:10,511 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-23 03:43:10,736 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-23 03:43:11,041 [main] INFO logger_File - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-23 03:43:11,145 [main] INFO logger_File - user clicked on login button
+2023-02-23 03:43:11,710 [main] INFO logger_File - User click on Account Button
+2023-02-23 03:43:11,866 [main] INFO logger_File - User Scroll down the page and click on Add Address
+2023-02-23 03:43:12,801 [main] INFO logger_File - User fillout the Address Form
+2023-02-23 03:43:12,919 [main] INFO logger_File - User click on Add Your Address button
+2023-02-23 03:43:13,603 [main] INFO logger_File - UserAddress Added Successfully
+2023-02-23 04:23:33,431 [main] INFO logger_File - user is on retail website
+2023-02-23 04:23:33,451 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-23 04:23:33,780 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-23 04:23:34,062 [main] INFO logger_File - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-23 04:23:34,167 [main] INFO logger_File - user clicked on login button
+2023-02-23 04:23:34,597 [main] INFO logger_File - User click on Account Button
+2023-02-23 04:23:34,771 [main] INFO logger_File - User click on Eidt option
+2023-02-23 04:23:36,114 [main] INFO logger_File - User Eidt the Address Form
+2023-02-23 04:23:36,216 [main] INFO logger_File - User click on Update Your Address button
+2023-02-23 04:27:57,838 [main] INFO logger_File - user is on retail website
+2023-02-23 04:27:57,862 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-23 04:27:58,233 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-23 04:27:58,517 [main] INFO logger_File - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-23 04:27:58,618 [main] INFO logger_File - user clicked on login button
+2023-02-23 04:27:59,049 [main] INFO logger_File - User click on Account Button
+2023-02-23 04:27:59,208 [main] INFO logger_File - User click on Eidt option
+2023-02-23 04:28:00,546 [main] INFO logger_File - User Eidt the Address Form
+2023-02-23 04:28:00,638 [main] INFO logger_File - User click on Update Your Address button
+2023-02-23 04:28:01,454 [main] INFO logger_File - UserAddress Updated Successfully
+2023-02-23 04:28:49,599 [main] INFO logger_File - user is on retail website
+2023-02-23 04:28:49,630 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-23 04:28:49,979 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-23 04:28:50,244 [main] INFO logger_File - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-23 04:28:50,337 [main] INFO logger_File - user clicked on login button
+2023-02-23 04:28:50,747 [main] INFO logger_File - User click on Account Button
+2023-02-23 04:28:50,907 [main] INFO logger_File - User click on Eidt option
+2023-02-23 04:28:52,131 [main] INFO logger_File - User Eidt the Address Form
+2023-02-23 04:28:52,221 [main] INFO logger_File - User click on Update Your Address button
+2023-02-23 04:28:52,982 [main] INFO logger_File - UserAddress Updated Successfully
+2023-02-23 04:36:24,792 [main] INFO logger_File - user is on retail website
+2023-02-23 04:36:24,804 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-23 04:36:24,981 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-23 04:36:25,278 [main] INFO logger_File - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-23 04:36:25,380 [main] INFO logger_File - user clicked on login button
+2023-02-23 04:36:26,021 [main] INFO logger_File - User click on Account Button
+2023-02-23 04:36:26,173 [main] INFO logger_File - User click on Eidt option
+2023-02-23 04:36:27,446 [main] INFO logger_File - User Eidt the Address Form
+2023-02-23 04:36:27,547 [main] INFO logger_File - User click on Update Your Address button
+2023-02-23 04:36:28,309 [main] INFO logger_File - UserAddress Updated Successfully
+2023-02-23 04:57:45,750 [main] INFO logger_File - user is on retail website
+2023-02-23 04:57:45,776 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-23 04:57:45,983 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-23 04:57:46,279 [main] INFO logger_File - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-23 04:57:46,382 [main] INFO logger_File - user clicked on login button
+2023-02-23 04:57:46,997 [main] INFO logger_File - User click on Account Button
+2023-02-23 04:57:47,118 [main] INFO logger_File - User click on Remove button at the address section
+2023-02-23 04:57:47,148 [main] INFO logger_File - Address should be removed from the Account section
+2023-02-23 04:59:13,608 [main] INFO logger_File - user is on retail website
+2023-02-23 04:59:13,621 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-23 04:59:13,925 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-23 04:59:14,199 [main] INFO logger_File - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-23 04:59:14,295 [main] INFO logger_File - user clicked on login button
+2023-02-23 04:59:14,704 [main] INFO logger_File - User click on Account Button
+2023-02-23 04:59:14,852 [main] INFO logger_File - User Scroll down the page and click on Add Address
+2023-02-23 04:59:15,792 [main] INFO logger_File - User fillout the Address Form
+2023-02-23 04:59:15,906 [main] INFO logger_File - User click on Add Your Address button
+2023-02-23 04:59:16,624 [main] INFO logger_File - UserAddress Added Successfully
+2023-02-23 05:00:38,171 [main] INFO logger_File - user is on retail website
+2023-02-23 05:00:38,185 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-23 05:00:38,358 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-23 05:00:38,650 [main] INFO logger_File - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-23 05:00:38,755 [main] INFO logger_File - user clicked on login button
+2023-02-23 05:00:39,173 [main] INFO logger_File - User click on Account Button
+2023-02-23 05:00:39,354 [main] INFO logger_File - User Scroll down the page and click on Add Address
+2023-02-23 05:00:40,370 [main] INFO logger_File - User fillout the Address Form
+2023-02-23 05:00:40,475 [main] INFO logger_File - User click on Add Your Address button
+2023-02-23 05:00:41,160 [main] INFO logger_File - UserAddress Added Successfully
+2023-02-23 05:02:46,454 [main] INFO logger_File - user is on retail website
+2023-02-23 05:02:46,479 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-02-23 05:02:46,865 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-23 05:02:47,133 [main] INFO logger_File - user entered email dilberjan@gmail.com and Password Jan@123456
+2023-02-23 05:02:47,233 [main] INFO logger_File - user clicked on login button
+2023-02-23 05:02:47,645 [main] INFO logger_File - User click on Account Button
+2023-02-23 05:02:47,770 [main] INFO logger_File - User click on Remove button at the address section
+2023-02-23 05:02:47,799 [main] INFO logger_File - Address should be removed from the Account section
