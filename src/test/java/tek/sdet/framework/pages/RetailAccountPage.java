@@ -99,8 +99,8 @@ public class RetailAccountPage extends BaseSetup{
 	@FindBy(xpath = "//input[@id='phoneNumberInput']")
 	public WebElement addressPhoneNumberField;
 	
-	@FindBy(xpath = "//input[@id='streetInput']")
-	public WebElement AddressField;
+	@FindBy(xpath = "//input[@name='street']")
+	public WebElement addressField;
 	
 	@FindBy(xpath = "//input[@id='apartmentInput']")
 	public WebElement apartmentField;
@@ -118,7 +118,7 @@ public class RetailAccountPage extends BaseSetup{
 	public WebElement addYourAddessBtn;
 	
 	@FindBy(xpath = "//div[contains(text(),'Address Added Successfully')]")
-	public WebElement addressAddedMessage;;
+	public WebElement addressAddedMessage;
 	
 	@FindBy(xpath ="(//button[@class='account__address-btn'])[1]")
 	public WebElement eidtAddressBtn;
