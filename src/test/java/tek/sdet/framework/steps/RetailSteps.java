@@ -96,7 +96,83 @@ public class RetailSteps extends CommonUtility {
 	   
 	}
 	
+	@When("User change the category to {string}")
+	public void userChangeTheCategoryTo(String string) {
+	    selectByVisibleText(factory.homePage().allDepartmentDropDown, string);
+	    logger.info("User change the category to " + string);
+	}
+	@When("User search for an item {string}")
+	public void userSearchForAnItem(String string) {
+	    click(factory.homePage().searchbar);
+	    sendText(factory.homePage().searchbar, string);
+	    logger.info("User search for " + string);
+	}
+	@When("User click on Search icon")
+	public void userClickOnSearchIcon() {
+	    click(factory.homePage().searchButton);
+	    logger.info("User click on search button");
+	}
+	@When("User click on item")
+	public void userClickOnItem() {
+	   click(factory.homePage().productKasaOutdoorSmartPlug);
+	   logger.info("User click on the product");
+	}
+	@When("User select quantity {string}")
+	public void userSelectQuantity(String string) {
+	    selectByVisibleText(factory.homePage().quantityDropDown, string);
+	    logger.info("User change quantity to " + string);
+	}
+	@When("User click on add to Cart button")
+	public void userClickOnAddToCartButton() {
+	    click(factory.homePage().addToCartBtn);
+	    logger.info("User click on Add To Cart button");
+	}
+	@Then("the cart icon quantity should change to {string}")
+	public void theCartIconQuantityShouldChangeTo(String string) {
+	   waitTillPresence(factory.homePage().cartQuantity);
+	   Assert.assertEquals(factory.homePage().cartQuantity.getText(), string);
+	   logger.info("The cart quantity change to "+ string);
+	}
+	@Then("User click on Cart option")
+	public void userClickOnCartOption() {
+	    click(factory.homePage().cartButton);
+	    logger.info("User click on Cart button");
+	}
+	@Then("User click on procced to Checkout button")
+	public void userClickOnProccedToCheckoutButton() {
+	    click(factory.cartPage().proceedToChectoutBtn);
+	    logger.info("User click on proceed to Checkout button");
+	}
+	@Then("User click Add a new address link for shipping address")
+	public void userClickAddANewAddressLinkForShippingAddress() {
+	    click(factory.cartPage().addAddressLink);
+	    logger.info("User click on Add a new Address link");
+	}
+	@Then("User click Add a credit card or Debit card for payment method")
+	public void userClickAddACreditCardOrDebitCardForPaymentMethod() {
+	    click(factory.cartPage().addCreditOrDebitCardLink);
+	    logger.info("User click on Add credit or debit Card");
+	}
+	@Then("User click on place Your Order")
+	public void userClickOnPlaceYourOrder() {
+	   click(factory.cartPage().placeYourOrderBtn);
+	   logger.info("User place the Order");
+	}
+	@Then("a message shouled be displayed for placing order {string}")
+	public void aMessageShouledBeDisplayedForPlacingOrder(String orderMsg) {
+		waitTillPresence(factory.cartPage().orderPlacedMsg);
+	  Assert.assertEquals(factory.cartPage().orderPlacedMsg.getText(), orderMsg);
+	  logger.info("Order Placed, Thanks should be Displayed");
+	}
 	
+	@When("User click on items")
+	public void userClickOnItems() {
+	    click(factory.homePage().productApexLegends);
+	    logger.info(" user click on Apex Legends product");
+	}
 	
+
+
+
 	
 }

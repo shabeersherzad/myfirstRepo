@@ -146,11 +146,27 @@ public class RetailHomePage extends BaseSetup {
 	    @FindBy (xpath = "//div[@class='sidebar_content-item']/span")
 	    public List<WebElement> sideBarOptionElements;
 	    
+	    @FindBy(xpath= "//option[contains (text(), 'Smart Home')]")
+	    public WebElement allDepartmentSmartHomeOption;
 	    
+	    @FindBy(xpath = "//p[contains(text(),'Kasa Outdoor Smart Plug')]")
+	    public WebElement productKasaOutdoorSmartPlug;
 	    
+	    @FindBy(xpath = "//select[@class='product__select']")
+	    public WebElement quantityDropDown;
 	    
+	    @FindBy(xpath = "//span[contains(text(),'Add to Cart')]")
+	    public WebElement addToCartBtn;
 	    
-
+	    @FindBy(xpath= "//span[@id='cartQuantity']")
+	    public WebElement cartQuantity;
+	    
+	    @FindBy(xpath = "//p[contains(text(),'Apex Legends - 1,000 Apex Coins')]")
+	    public WebElement productApexLegends;
+        
+        
+        
+        
 	
 	
 }

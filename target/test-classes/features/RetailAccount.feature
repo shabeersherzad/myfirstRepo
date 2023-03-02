@@ -20,20 +20,19 @@ Feature: Retail Application Account Feature
     When User click on change Password button
     Then A message should be displayed Password Updated Successfully
 
+  @addPayment
   Scenario: Verify User can add a payment method
     And User click on Add a payment method link
-    And User fill Debit or credit card information
-      | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 2288953621439999 | dilberJani |              10 |           2026 |          355 |
+    And User fill Debit or Credit card information
+      | cardNumber | nameOnCard | expirationMonth | expirationYear | securityCode |
     And User click on Add your card button
     Then A message should be displayed 'Payment Method added sucessfully'
 
-  @smoke
+  
   Scenario: Verify User can edit Debit or Credit card
     And User click on Edit option of card section
     And User edit information with below data
-      | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 5666789867332144 | sher Khan  |               3 |           2027 |          444 |
+      | cardNumber | nameOnCard | expirationMonth | expirationYear | securityCode |
     And User click on Update Your Card button
     Then A message should be displayed for update card 'Payment Method updated Successfully'
 
@@ -45,10 +44,9 @@ Feature: Retail Application Account Feature
   @addAddress
   Scenario: Verify User can add an Address
     And User click on Add address option
-    And User fill new Address form with below information
-      | country       | fullName     | phoneNumber  | streetAddress   | apt | city  | state   | zipCode |
-      | United States | Donald Trump | 313-453-6534 | 555 Maralago St | Nil | Maimi | Florida |   23454 |
-    And User click Add Address button
+    And User fill new address form with below information
+      | country | fullName | phoneNumber | streetAddress | apt | city | state | zipCode |
+    And User click Add Your Address button
     Then A message should be displayed for Adding Address 'Address Added Successfully'
 
   @updateAddress
@@ -59,7 +57,8 @@ Feature: Retail Application Account Feature
       | United States | Donald Trump | 313-453-6534 | 555 Dollar St | Nil | Maimi | Florida |   23454 |
     And User click on update Your Address button
     Then A message should be displayed for Updating Address 'Address Updated Successfully'
-@removeAddress
+
+  @removeAddress
   Scenario: 
     When User click on remove option of Address section
     Then Address details should be removed

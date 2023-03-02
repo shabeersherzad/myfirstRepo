@@ -13,6 +13,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import tek.sdet.framework.pages.POMFactory;
 import tek.sdet.framework.utilities.CommonUtility;
+import tek.sdet.framework.utilities.DataGeneratorUtility;
 
 public class RetailAccountSteps extends CommonUtility{
 	
@@ -70,14 +71,14 @@ public class RetailAccountSteps extends CommonUtility{
 	    click(factory.accountPage().addPaymentMethodLink);
 	    logger.info("User click add a payment Method");
 	}
-	@Given("User fill Debit or credit card information")
+	@Given("User fill Debit or Credit card information")
 	public void userFillDebitOrCreditCardInformation(DataTable dataTable) {
-		List<Map<String, String>> paymentInfo = dataTable.asMaps(String.class, String.class);
-	    sendText(factory.accountPage().cardNumberField, paymentInfo.get(0).get("cardNumber"));
-	    sendText(factory.accountPage().nameOnCardField, paymentInfo.get(0).get("nameOnCard"));
-	    selectByValue(factory.accountPage().expirationMonthDropDown, paymentInfo.get(0).get("expirationMonth"));
-	    selectByValue(factory.accountPage().expirationYearDropDown, paymentInfo.get(0).get("expirationYear"));
-	    sendText(factory.accountPage().securityCodeField, paymentInfo.get(0).get("securityCode"));
+		List<List<String>> paymentInfo = dataTable.asLists(String.class);
+	    sendText(factory.accountPage().cardNumberField, DataGeneratorUtility.data(paymentInfo.get(0).get(0)));
+	    sendText(factory.accountPage().nameOnCardField, DataGeneratorUtility.data(paymentInfo.get(0).get(1)));
+	    selectByVisibleText(factory.accountPage().expirationMonthDropDown, DataGeneratorUtility.data(paymentInfo.get(0).get(2)));
+	    selectByVisibleText(factory.accountPage().expirationYearDropDown, DataGeneratorUtility.data(paymentInfo.get(0).get(3)));
+	    sendText(factory.accountPage().securityCodeField, DataGeneratorUtility.data(paymentInfo.get(0).get(4)));
 	    logger.info("User fill Debit/Credit Card Information");
 	    
 	}
@@ -102,15 +103,15 @@ public class RetailAccountSteps extends CommonUtility{
 	}
 	@When("User edit information with below data")
 	public void userEditInformationWithBelowData(DataTable dataTable) {
-		List<Map<String, String>> eidtPaymentInfo = dataTable.asMaps(String.class, String.class);
+		List<List<String>> eidtPaymentInfo = dataTable.asLists(String.class);
 		clearTextUsingSendKeys(factory.accountPage().cardNumberField);
-		sendText(factory.accountPage().cardNumberField, eidtPaymentInfo.get(0).get("cardNumber"));
+		sendText(factory.accountPage().cardNumberField, DataGeneratorUtility.data(eidtPaymentInfo.get(0).get(0)));
 		clearTextUsingSendKeys(factory.accountPage().nameOnCardField);
-		sendText(factory.accountPage().nameOnCardField, eidtPaymentInfo.get(0).get("nameOnCard"));
-		selectByValue(factory.accountPage().expirationMonthDropDown, eidtPaymentInfo.get(0).get("expirationMonth"));
-		selectByValue(factory.accountPage().expirationYearDropDown, eidtPaymentInfo.get(0).get("expirationYear"));
+		sendText(factory.accountPage().nameOnCardField, DataGeneratorUtility.data(eidtPaymentInfo.get(0).get(1)));
+		selectByVisibleText(factory.accountPage().expirationMonthDropDown, DataGeneratorUtility.data(eidtPaymentInfo.get(0).get(2)));
+		selectByVisibleText(factory.accountPage().expirationYearDropDown, DataGeneratorUtility.data(eidtPaymentInfo.get(0).get(3)));
 		clearTextUsingSendKeys(factory.accountPage().securityCodeField);
-		sendText(factory.accountPage().securityCodeField, eidtPaymentInfo.get(0).get("securityCode"));
+		sendText(factory.accountPage().securityCodeField, DataGeneratorUtility.data(eidtPaymentInfo.get(0).get(4)));
 		logger.info("User update their card information");
 	    
 	}
@@ -142,20 +143,20 @@ public class RetailAccountSteps extends CommonUtility{
 		click(factory.accountPage().addAddressIcon);
 		logger.info("User Scroll down the page and click on Add Address");
 	}
-	@When("User fill new Address form with below information")
+	@When("User fill new address form with below information")
 	public void userFillNewAddressFormWithBelowInformation(DataTable dataTable) {
-	    List<Map<String, String>> addressInfo = dataTable.asMaps(String.class, String.class);
-	    selectByVisibleText(factory.accountPage().countryDropDown, addressInfo.get(0).get("country"));
-	    sendText(factory.accountPage().addressFullNameField, addressInfo.get(0).get("fullName"));
-	    sendText(factory.accountPage().addressPhoneNumberField, addressInfo.get(0).get("phoneNumber"));
-	    sendText(factory.accountPage().AddressField, addressInfo.get(0).get("streetAddress"));
-	    sendText(factory.accountPage().apartmentField, addressInfo.get(0).get("apt"));
-	    sendText(factory.accountPage().cityField, addressInfo.get(0).get("city"));
-	    selectByVisibleText(factory.accountPage().stateDropDown, addressInfo.get(0).get("state"));
-	    sendText(factory.accountPage().zipCodeField, addressInfo.get(0).get("zipCode"));
+	    List<List<String>> addressInfo =dataTable.asLists(String.class);
+	    selectByVisibleText(factory.accountPage().countryDropDown, DataGeneratorUtility.data(addressInfo.get(0).get(0)));
+	    sendText(factory.accountPage().addressFullNameField, DataGeneratorUtility.data(addressInfo.get(0).get(1)));
+	    sendText(factory.accountPage().addressPhoneNumberField, DataGeneratorUtility.data(addressInfo.get(0).get(2)));
+	    sendText(factory.accountPage().addressField, DataGeneratorUtility.data(addressInfo.get(0).get(3)));
+	    sendText(factory.accountPage().apartmentField, DataGeneratorUtility.data(addressInfo.get(0).get(4)));
+	    sendText(factory.accountPage().cityField, DataGeneratorUtility.data(addressInfo.get(0).get(5)));
+	    selectByVisibleText(factory.accountPage().stateDropDown, DataGeneratorUtility.data(addressInfo.get(0).get(6)));
+	    sendText(factory.accountPage().zipCodeField, DataGeneratorUtility.data(addressInfo.get(0).get(7)));
 	    logger.info("User fillout the Address Form");
 	}
-	@When("User click Add Address button")
+	@When("User click Add Your Address button")
 	public void userClickAddAddressButton() {
 		click(factory.accountPage().addYourAddessBtn);
 		logger.info("User click on Add Your Address button");
@@ -181,8 +182,8 @@ public class RetailAccountSteps extends CommonUtility{
 	    sendText(factory.accountPage().addressFullNameField, addressInfo.get(0).get("fullName"));
 	    clearTextUsingSendKeys(factory.accountPage().addressPhoneNumberField);
 	    sendText(factory.accountPage().addressPhoneNumberField, addressInfo.get(0).get("phoneNumber"));
-	    clearTextUsingSendKeys(factory.accountPage().AddressField);
-	    sendText(factory.accountPage().AddressField, addressInfo.get(0).get("streetAddress"));
+	    clearTextUsingSendKeys(factory.accountPage().addressField);
+	    sendText(factory.accountPage().addressField, addressInfo.get(0).get("streetAddress"));
 	    clearTextUsingSendKeys(factory.accountPage().apartmentField);
 	    sendText(factory.accountPage().apartmentField, addressInfo.get(0).get("apt"));
 	    clearTextUsingSendKeys(factory.accountPage().cityField);
