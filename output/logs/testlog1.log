@@ -1441,3 +1441,10 @@
 2023-03-02 17:00:59,420 [main] INFO logger_File - User wrote a review
 2023-03-02 17:00:59,513 [main] INFO logger_File - User click on Add YOur Review button
 2023-03-02 17:01:00,188 [main] INFO logger_File - A message should be Displayed Your Review Was Added Successfully
+2023-03-02 23:26:08,603 [main] INFO logger_File - user is on retail website
+2023-03-02 23:26:08,640 [main] INFO logger_File - Actual Title React App Equals  Expected Title React App
+2023-03-02 23:26:09,054 [main] INFO logger_File - User clicked on Sign in Option
+2023-03-02 23:26:09,729 [main] INFO logger_File - user click on create new account
+2023-03-02 23:26:10,463 [main] INFO logger_File - User filled the signup information Form
+2023-03-02 23:26:10,587 [main] INFO logger_File - User click on SignUp button
+2023-03-02 23:26:11,551 [main] INFO logger_File - User is logged in into Account page

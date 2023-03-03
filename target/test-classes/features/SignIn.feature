@@ -20,11 +20,11 @@ Feature: Tek Retail Application SignIn feature
       | transformers@tekschool.us    | Tek@12345   |
       | shabeer.shirzad@tekschool.us | 123Khan360! |
       | dilberjan@gmail.com          | Jan@123456  |
-
+@verify
   Scenario: Verify user can create an account into Retail Website
     And User click on Create New Account button
     And User fill the signUp information with below data
       | name      | email           | password | confirm Password |
-      | shershahs | shers@gmail.com | Sher@123 | Sher@123         |
+      | MulaOmers | MulaOmers@gmail.com | Sher@123 | Sher@123         |
     And User click on SignUp button
     Then User should be logged in into account page
